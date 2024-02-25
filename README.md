@@ -23,22 +23,19 @@ To run the Currency Converter API, you need to have Docker installed on your sys
 
 Clone this repository to your local machine:
 
-```
-html
+```html
 git clone https://github.com/barkhayot/currency-exchange.git
 ```
 
 Open main folder
 
-```
-html
+```html
 cd currency-converter-api
 ```
 
 Build and run the Docker containers using docker-compose:
 
-```
-html
+```html
 docker-compose up --build
 ```
 
