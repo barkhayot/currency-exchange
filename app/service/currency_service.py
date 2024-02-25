@@ -4,13 +4,14 @@ from app.db.base import SessionLocal
 from datetime import datetime
 from app.schemas.schema import Converted
 from fastapi import HTTPException
+from app.constants.constants import SERVICE_URL
 
 
 def update_exchange_rates():
     """Updates currency exchange rates in the database."""
     try:
-        response = requests.get("https://api.frankfurter.app/latest")
-        data = response.json()
+        response = requests.get()
+        data = response.json(SERVICE_URL)
         db = SessionLocal()
         for code, rate in data["rates"].items():
             currency = db.query(Currency).filter(Currency.code == code).first()
