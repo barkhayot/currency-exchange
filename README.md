@@ -15,9 +15,10 @@ This Currency Converter API provides endpoints for obtaining current exchange ra
 
 To run the Currency Converter API, you need to have Docker installed on your system. Follow the instructions for your operating system to install Docker:
 
-- Install Docker on Windows
-- Install Docker on macOS
-- Install Docker on Linux
+- [Install Docker on Windows](https://docs.docker.com/desktop/install/windows-install/)
+- [Install Docker on macOS](https://docs.docker.com/desktop/install/mac-install/)
+- [Install Docker on Linux](https://docs.docker.com/desktop/install/linux-install/)
+
 
 ### Usage
 
@@ -46,6 +47,11 @@ Once the containers are up and running, you can access the API at http://localho
 - `/currency`: Get all currency data.
 - `/updated_time`: Display the date and time of the last update of rates in the database.
 - `/convert`: Convert between currencies.
+
+## Frankfurter API
+
+The Currency Converter API uses the [Frankfurter API](https://www.frankfurter.app/) to fetch current exchange rates. Frankfurter is an open-source API for current and historical foreign exchange rates published by the European Central Bank.
+
 
 ### Contributing
 Contributions are welcome! If you encounter any issues or have suggestions for improvements, please open an issue or submit a pull request.
